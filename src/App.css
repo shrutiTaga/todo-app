@@ -1,0 +1,143 @@
+/* App.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.task-input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.delete-button,
+.edit-button,
+.read-button,
+.cancel-button,
+.save-button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button,
+.read-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-button:hover,
+.read-button:hover {
+  background-color: #bb2d3b;
+}
+
+.edit-button,
+.cancel-button,
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-button:hover,
+.cancel-button:hover,
+.save-button:hover {
+  background-color: #218838;
+}
+
+.read-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.read-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .task-input {
+    font-size: 14px;
+  }
+
+  .add-button,
+  .delete-button,
+  .edit-button,
+  .read-button,
+  .cancel-button,
+  .save-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+body {
+  background-color: rgb(236, 228, 228);
+}
