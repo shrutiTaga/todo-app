@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://github.com/shrutiTaga/todo-react-app.git",
+  base: "/todo-app/",
   plugins: [react()],
   test: {
     environment: 'jsdom',
