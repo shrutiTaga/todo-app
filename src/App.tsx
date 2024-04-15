@@ -114,7 +114,7 @@ function App() {
             onKeyDown={handleKeyPress}
             placeholder="Enter task..."
             autoFocus={!editTaskId}
-            style={{ width: 'calc(100% - 110px)' }}
+            
           />
           <button className="add-button" onClick={handleAddTask}>Add</button>
         </div>
