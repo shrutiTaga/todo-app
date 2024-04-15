@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Todo App is a dynamic task management application developed using React.js and Vite. It allows users to manage their tasks efficiently by providing features such as adding, editing, and deleting tasks, as well as a unique task reader functionality.
 
-Currently, two official plugins are available:
+## Features
+- **Add Task:** Users can easily add new tasks to the list by entering task descriptions and clicking the "Add" button.
+- **Edit Task:** Tasks can be edited inline by clicking on them, allowing users to modify task details.
+- **Delete Task:** Tasks can be removed from the list by clicking on the "Delete" button associated with each task.
+- **Task Reader:** Clicking on any task reads the task description aloud, enhancing accessibility and user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- Vite
+- HTML5
+- CSS3
+- JavaScript
 
-## Expanding the ESLint configuration
+## Getting Started
+To run the Todo App locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install the project dependencies.
+4. Run `npm run dev` to start the development server.
+5. Open your browser and go to `http://localhost:5173/todo-app/` to view the Todo App.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
+- `src/`: Contains the source code files for the Todo App.
+- `public/`: Contains the public assets such as HTML files and images.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-};
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Feedback
+Feedback and contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
